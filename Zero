@@ -1,5 +1,6 @@
-module top_module ( output zero );
+module top_module( input in, output out );
 	
-	assign zero = 1'b0;
+	assign out = in;
+	// Note that wires are directional, so "assign in = out" is not equivalent.
 	
 endmodule
